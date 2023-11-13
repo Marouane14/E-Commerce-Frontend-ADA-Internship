@@ -1,0 +1,59 @@
+.space-buttons {
+    flex: 1 1 auto;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
+.header-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 0;
+    transition: background-color 1.3s ease;
+  }
+  
+  .header-wrapper.scrolled {
+    background-color: rgba(255, 255, 255, 0); /* Transition to transparent white */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 1.3s ease;
+  }
+  .text-accent.scrolled{
+    color:#f4b044;
+  }
+  .btns.bg-accent.scrolled{
+    background-color: rgb(48, 90, 163);
+    color: white;
+  }
+  
+  .mat-toolbar.bg-gradient-primary {
+    background-color:  #6e9266;
+    transition: background-color 1.3s ease;
+  }
+  .mat-toolbar.bg-gradient-primary.bg-scroll {
+    background-color: rgba(255, 255, 255, 0.801); /* Transition to transparent white */
+    color: black;
+    transition: background-color 1.3s ease;
+  }
+  .btns{
+    background-color:  #f4b044;
+    color: white;
+  }
+  span{
+    color: white;
+  }
+  
+  
+  
+  /* .bg-scroll {
+    background-color: transparent !important; /* Remove background color when scrolled */
+  
+  
+.bg-accent{
+  margin-right: 0.2%;
+  text-align: center;
+}

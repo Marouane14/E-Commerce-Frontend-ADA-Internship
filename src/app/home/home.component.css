@@ -1,0 +1,124 @@
+mat-grid-tile {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    height: 300px;
+}
+
+.home-page-product-image {
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* Customize the input field */
+.custom-input {
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ccc; /* Add a border */
+  padding: 8px 12px; /* Add some padding */
+  font-size: 16px; /* Increase font size */
+  transition: border-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Style the input field when it's focused */
+.custom-input:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow */
+}
+
+/* Customize the label and hint text color */
+.mat-form-field-label,
+.mat-hint {
+  color: #333; /* Change text color */
+}
+
+/* Customize the label font size */
+.mat-form-field-label {
+  font-size: 14px;
+}
+
+/* Add some spacing to the hint text */
+.mat-hint {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+/* Style for the grid list */
+.mat-grid-list {
+    margin: 0 auto; /* Center align the grid list */
+  }
+  
+  /* Style for each grid tile */
+  .mat-grid-tile {
+    border: 1px solid #ddd; /* Add a border to each grid tile */
+    border-radius: 10px; /* Rounded corners for grid tiles */
+    transition: box-shadow 0.3s; /* Add a smooth box shadow transition */
+  
+    /* On hover, add a box shadow to create a subtle hover effect */
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* Style for the product image container */
+  .image-container {
+    text-align: center; /* Center-align the image */
+  }
+  
+  /* Style for the product image */
+  .home-page-product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  /* Style for product name */
+  .mat-grid-tile p b {
+    font-size: 18px; /* Increase font size for product name */
+    color: #333; /* Change text color */
+  }
+  
+  /* Style for product description */
+  .mat-grid-tile p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    color: #666; /* Change text color */
+  }
+  
+  /* Style for product prices */
+  .mat-grid-tile .mt-2 {
+    font-size: 16px; /* Adjust font size for prices */
+    color: #007bff; /* Change text color for discounted price */
+  }
+  
+  /* Style for the "View Details" button */
+  .mat-grid-tile button {
+    background-color: #f44336; /* Change button background color */
+    color: white; /* Change text color */
+    border-radius: 5px; /* Rounded corners for the button */
+  }
+  
+  /* Style for the "Load more" button */
+  .text-center button {
+    background-color: #007bff; /* Change button background color */
+    color: white; /* Change text color */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Add padding to the button */
+  }
+  
+  /* Style for the "Load more" button on hover */
+  .text-center button:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+  }
+  

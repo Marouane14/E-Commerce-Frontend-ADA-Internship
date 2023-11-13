@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <div class="card text-center" style="padding: 20px">
+      <img src="..\..\assets\logo-ada.png" alt="Logo" style="max-width: 350px; margin: 0 auto 20px; display: block;">
+      <app-time style="margin: 2%"></app-time>
+      <h1>Welcome <strong class="username">{{ username }}</strong>, your role is : <strong class="role">Admin</strong></h1>
+      <app-stats-bar *ngIf="roleName === 'Admin'"> </app-stats-bar>
+      <app-cards-stats-container *ngIf="roleName === 'Admin'">
+      </app-cards-stats-container>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="header-wrapper" [ngClass]="{'scrolled': hasScrolled}">
+<mat-toolbar class="bg-gradient-primary" [ngClass]="{'bg-scroll': hasScrolled}"> <!-- Change background color to a primary gradient -->
+  <img src="..\..\assets\favicon (2).png" alt="Logo" class="logo">
+  <span class="text-accent" [ngClass]="{'scrolled': hasScrolled}"> <!-- Change text color to an accent color -->
+    <strong>Agence Pour Développement Agricole E-Commerce Application</strong>
+  </span>
+
+  <span class="space-buttons"></span>
+  <button class="btns" *ngIf="!isLoggedIn()" routerLink="/login" mat-raised-button color="primary"> <!-- Change button color to accent -->
+    Login
+  </button>
+  <button *ngIf="isLoggedIn()" (click)="logout()" mat-raised-button color="warn">
+    Logout
+  </button>
+</mat-toolbar>
+
+<mat-toolbar class="bg-gradient-primary" *ngIf="isLoggedIn()" [ngClass]="{'bg-scroll': hasScrolled}"> <!--Change background color to a primary gradient-->
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="isAdmin()" mat-raised-button class="btns bg-accent" routerLink="/dashboard"> <!-- Change button color to accent -->
+    Dashboard
+  </button>
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="isUser()" mat-raised-button class="btns bg-accent" routerLink="/"> <!-- Change button color to accent -->
+    Home
+  </button>
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="!isAdmin()" mat-raised-button class="btns bg-accent" routerLink="/cart"> <!-- Change button color to accent -->
+    Cart
+  </button>
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="!isAdmin()" mat-raised-button class="btns bg-accent" routerLink="/myOrders"> <!-- Change button color to accent -->
+    My Orders
+  </button>
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="isAdmin()" mat-raised-button class="btns bg-accent" routerLink="/addNewProduct"> <!-- Change button color to accent -->
+    Add New Product
+  </button>
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="isAdmin()" mat-raised-button class="btns bg-accent" routerLink="/showProductDetails"> <!-- Change button color to accent -->
+    Show Product Details
+  </button>
+  <button [ngClass]="{'scrolled': hasScrolled}" *ngIf="isAdmin()" mat-raised-button class="btns bg-accent" routerLink="/orderInformation"> <!-- Change button color to accent -->
+    Order Information
+  </button>
+</mat-toolbar>
+</div>

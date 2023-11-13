@@ -1,0 +1,29 @@
+<div class="header-wrapper" [ngClass]="{'scrolled': hasScrolled}">
+    <mat-toolbar class="bg-gradient-primary" [ngClass]="{'bg-scroll': hasScrolled}">
+      <!-- Header content -->
+    </mat-toolbar>
+  
+    <div class="sidebar-wrapper" [ngClass]="{'show-sidebar': sidebarVisible}">
+      <nav class="sidebar">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/cart">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/myOrders">My Orders</a>
+          </li>
+          <!-- Add more menu items as needed -->
+        </ul>
+      </nav>
+      <button class="btn btn-primary toggle-sidebar-button" (click)="toggleSidebar()">
+        {{ sidebarVisible ? 'Hide' : 'Show' }} Sidebar
+      </button>
+    </div>
+  </div>
+  
